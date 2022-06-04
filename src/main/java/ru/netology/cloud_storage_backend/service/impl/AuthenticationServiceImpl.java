@@ -27,7 +27,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
         try {
             var login = authentication.getLogin();
             authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(login, authentication.getPassword()));
-            var user = userService.findByLogin(login);
+            var user = userService.findByEmail(login);
             return jwtTokenProvider.createToken(login, user.getRoles());
         } catch (AuthenticationException e) {
             throw new BadCredentialsException("Invalid username or password");

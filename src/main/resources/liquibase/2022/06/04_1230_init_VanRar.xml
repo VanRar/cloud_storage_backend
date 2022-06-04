@@ -20,7 +20,7 @@
             <column name="email" value="admin@example.com"/>
             <column name="first_name" value="admin"/>
             <column name="last_name" value="admin"/>
-            <column name="password" value="$2a$12$8nqhFLSCEw3IJHtPrsmr2.MmBalPnnS4/ZxqKnL2j9MN1dTMzlSV6"/>
+            <column name="password" value="$2a$12$BgLsVJm0Ot0sEHLe7twRLuyEpJdREUXXzBeLX9MD4q.EhkY4VN9T6"/>
         </insert>
 
         <insert tableName="user_roles">
