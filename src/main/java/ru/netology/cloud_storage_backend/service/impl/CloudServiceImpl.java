@@ -5,6 +5,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
+import ru.netology.cloud_storage_backend.exception.CloudServiceFileException;
+import ru.netology.cloud_storage_backend.exception.CloudServiceNotFoundException;
 import ru.netology.cloud_storage_backend.model.file.File;
 import ru.netology.cloud_storage_backend.model.file.Status;
 import ru.netology.cloud_storage_backend.repository.FileLocalRepository;

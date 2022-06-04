@@ -3,6 +3,7 @@ package ru.netology.cloud_storage_backend.service.impl;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
+import ru.netology.cloud_storage_backend.exception.CloudServiceNotFoundException;
 import ru.netology.cloud_storage_backend.model.user.User;
 import ru.netology.cloud_storage_backend.repository.UserRepository;
 import ru.netology.cloud_storage_backend.service.UserService;
