@@ -11,10 +11,6 @@ services:
       - ./docker/volumes/datadir:/var/lib/mysql mysql
     ports:
       - 3307:3306
-  front_app:
-    image: cloud-front
-    ports:
-      - 8081:8080
   cloud_service:
     image: cloud_app
     restart: on-failure
