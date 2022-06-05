@@ -41,16 +41,6 @@ public class CloudControllerTest {
 
     @Test
     @SneakyThrows
-    public void whenGetFile_thenStatusOk() {
-        var file = new ClassPathResource("files\\test.txt").getFile();
-        when(cloudService.getFile(token, fileName)).thenReturn(file);
-
-        mockMvc.perform(get("/file").header("auth-token", token).param("filename", fileName))
-                .andExpect(status().isOk());
-    }
-
-    @Test
-    @SneakyThrows
     public void whenGetList_thenStatusOk() {
         var list = List.of(
                 FileDTO.builder().filename("name").size(100L).build()
