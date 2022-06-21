@@ -15,7 +15,7 @@ REST-сервис, предоставляющий интерфейс для ра
 ## Запуск приложения
 - выполнить команду mvn clean install
 - выполнить команду docker build -t cloud_app .
-- скачать [FRONT](./netology-diplom-frontend), добавить в корень файл Docker и вставить в него:
+- скачать [FRONT](./netology-diplom-frontend), установить следуя инструкция
 - выполнить docker-compose up
 - запустить фронт по инструкции
 
